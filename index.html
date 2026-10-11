@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Loxstore — Gamepass dan Cash Drag Drive Simulator di Roblox.">
+  <title>Loxstore — Drag Drive Simulator</title>
+  <link rel="stylesheet" href="style.css?v=20261011-carousel-responsive3">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">L</span><span>Loxstore</span></a>
+  <nav><a href="#produk">Produk</a><a href="#cara-beli">Cara beli</a><a href="#faq">FAQ</a></nav>
+  <button class="cart-button" id="openCart" aria-label="Buka keranjang">Keranjang <span id="cartCount">0</span></button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Topup dds Murah?<br><span>Disini Tempatnya</span></h1>
+      <p>Upgrade pengalaman bermain Drag Drive Simulator dengan pilihan Gamepass dan Cash. Pilih produk, masukkan username Roblox, lalu konfirmasi pesanan melalui WhatsApp.</p>
+      <div class="hero-actions"><a class="btn primary" href="#produk">Lihat katalog <span>↘</span></a><a class="btn ghost" href="#cara-beli">Cara pembelian</a></div>
+    </div>
+    <div class="hero-visual hero-carousel" aria-label="Galeri gambar Drag Drive Simulator" data-carousel>
+      <button class="hero-carousel-arrow hero-carousel-prev" type="button" aria-label="Gambar sebelumnya">‹</button>
+      <div class="hero-carousel-track">
+        <div class="hero-slide"><img class="hero-photo" src="drag1.jpg" alt="Drag Drive Simulator — limited vehicles" fetchpriority="high"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag2.jpg" alt="Drag Drive Simulator — luxury vehicles" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag3.jpg" alt="Drag Drive Simulator — drag spec vehicles" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag4.jpg" alt="Drag Drive Simulator — Superman" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag5.jpg" alt="Drag Drive Simulator — modification" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag6.jpg" alt="Drag Drive Simulator — community motorcycles" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag7.jpg" alt="Drag Drive Simulator — roleplay" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drrag8.jpg" alt="Drag Drive Simulator — realistic features" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="drag9.jpg" alt="Drag Drive Simulator — mobil off-road" loading="eager"></div>
+        <div class="hero-slide"><img class="hero-photo" src="hero-whilie-style.webp" alt="Drag Drive Simulator — Whilie Style" loading="eager"></div>
+      </div>
+      <button class="hero-carousel-arrow hero-carousel-next" type="button" aria-label="Gambar berikutnya">›</button>
+      <div class="hero-carousel-dots" aria-label="Pilih gambar"></div>
+    </div>
+  </section>
+
+  <section class="social-links" aria-label="Hubungi dan ikuti Loxstore">
+    <a class="btn whatsapp-btn" href="https://wa.me/6282136950114" target="_blank" rel="noopener noreferrer"><img class="social-icon whatsapp-icon" src="whatsapp-icon.png" alt="" aria-hidden="true"> Hubungi WhatsApp</a>
+    <a class="btn tiktok-btn" href="https://www.tiktok.com/@usernamewps" target="_blank" rel="noopener noreferrer"><img class="social-icon tiktok-icon" src="tiktok-icon.png" alt="" aria-hidden="true"> Ikuti TikTok</a>
+  </section>
+
+  <section class="catalog section" id="produk">
+    <div class="section-head"><div><div class="eyebrow">PILIH UPGRADE-MU</div><h2>Katalog <span>produk</span></h2><p>Harga transparan. Pilih item untuk menambahkannya ke keranjang.</p></div>
+      <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari produk..."></label>
+    </div>
+    <div class="filters"><button class="filter active" data-filter="ALL">Semua item <span>17</span></button><button class="filter" data-filter="GAMEPASS">Gamepass <span>11</span></button><button class="filter" data-filter="CASH">Cash <span>6</span></button></div>
+    <div class="product-grid" id="productGrid">
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Suspension Pro" data-id="1" data-category="GAMEPASS" data-name="suspension pro">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="suspension-pro.webp" alt="Suspension Pro" loading="eager">
+          <span class="item-code">DDS / 01</span>
+        </div>
+        <div class="product-info"><h3>Suspension Pro</h3><p>Buka pengaturan suspensi lanjutan.</p><div class="product-buy"><strong>Rp7.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Boombox Radio" data-id="2" data-category="GAMEPASS" data-name="boombox radio">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="boombox.webp" alt="Boombox Radio" loading="eager">
+          <span class="item-code">DDS / 02</span>
+        </div>
+        <div class="product-info"><h3>Boombox Radio</h3><p>Putar musik dengan boombox di dalam game.</p><div class="product-buy"><strong>Rp7.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Premium Acc" data-id="3" data-category="GAMEPASS" data-name="premium acc">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="premium-accessories.webp" alt="Premium Acc" loading="eager">
+          <span class="item-code">DDS / 03</span>
+        </div>
+        <div class="product-info"><h3>Premium Acc</h3><p>Akses premium accessories.</p><div class="product-buy"><strong>Rp11.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Advance Paint Pass" data-id="4" data-category="GAMEPASS" data-name="advance paint pass">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="advance-paint.webp" alt="Advance Paint Pass" loading="eager">
+          <span class="item-code">DDS / 04</span>
+        </div>
+        <div class="product-info"><h3>Advance Paint Pass</h3><p>Akses pilihan cat lanjutan.</p><div class="product-buy"><strong>Rp11.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Exclusive Rims" data-id="5" data-category="GAMEPASS" data-name="exclusive rims">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="exclusive-rims.webp" alt="Exclusive Rims" loading="eager">
+          <span class="item-code">DDS / 05</span>
+        </div>
+        <div class="product-info"><h3>Exclusive Rims</h3><p>Buka pilihan velg eksklusif.</p><div class="product-buy"><strong>Rp14.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Custom Plate Pass" data-id="6" data-category="GAMEPASS" data-name="custom plate pass">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="custom-plate.webp" alt="Custom Plate Pass" loading="eager">
+          <span class="item-code">DDS / 06</span>
+        </div>
+        <div class="product-info"><h3>Custom Plate Pass</h3><p>Kustomisasi pelat kendaraan.</p><div class="product-buy"><strong>Rp14.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Slot Limit Unlocked" data-id="7" data-category="GAMEPASS" data-name="slot limit unlocked">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="slot-limit-unlocked.webp" alt="Slot Limit Unlocked" loading="eager">
+          <span class="item-code">DDS / 07</span>
+        </div>
+        <div class="product-info"><h3>Slot Limit Unlocked</h3><p>Buka slot kendaraan tambahan sesuai fitur game.</p><div class="product-buy"><strong>Rp15.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Drag Spec Pass" data-id="8" data-category="GAMEPASS" data-name="drag spec pass">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="drag-spec.webp" alt="Drag Spec Pass" loading="eager">
+          <span class="item-code">DDS / 08</span>
+        </div>
+        <div class="product-info"><h3>Drag Spec Pass</h3><p>Akses fitur drag spec.</p><div class="product-buy"><strong>Rp18.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Luxury Pass" data-id="9" data-category="GAMEPASS" data-name="luxury pass">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="luxury.webp" alt="Luxury Pass" loading="eager">
+          <span class="item-code">DDS / 09</span>
+        </div>
+        <div class="product-info"><h3>Luxury Pass</h3><p>Akses Luxury Pass.</p><div class="product-buy"><strong>Rp19.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Police Pass" data-id="10" data-category="GAMEPASS" data-name="police pass">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="police.webp" alt="Police Pass" loading="eager">
+          <span class="item-code">DDS / 10</span>
+        </div>
+        <div class="product-info"><h3>Police Pass</h3><p>Akses Police Pass.</p><div class="product-buy"><strong>Rp23.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih 2x Pay Check" data-id="11" data-category="GAMEPASS" data-name="2x pay check">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art">
+          <span class="product-type">GAMEPASS</span>
+          <img class="product-photo" src="2x-paycheck.webp" alt="2x Pay Check" loading="eager">
+          <span class="item-code">DDS / 11</span>
+        </div>
+        <div class="product-info"><h3>2x Pay Check</h3><p>Bonus paycheck 2x sesuai ketentuan game.</p><div class="product-buy"><strong>Rp70.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Cash 1M" data-id="12" data-category="CASH" data-name="cash 1m">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art cash-art">
+          <span class="product-type">CASH</span>
+          <img class="product-photo" src="cash.webp" alt="Cash 1M" loading="eager">
+          <span class="item-code">DDS / 12</span>
+        </div>
+        <div class="product-info"><h3>Cash 1M</h3><p>Paket 1 miliar cash</p><div class="product-buy"><strong>Rp98.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Cash 500jt" data-id="13" data-category="CASH" data-name="cash 500jt">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art cash-art">
+          <span class="product-type">CASH</span>
+          <img class="product-photo" src="cash.webp" alt="Cash 500jt" loading="eager">
+          <span class="item-code">DDS / 13</span>
+        </div>
+        <div class="product-info"><h3>Cash 500jt</h3><p>Paket 500 juta cash.</p><div class="product-buy"><strong>Rp51.000</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Cash 100jt" data-id="14" data-category="CASH" data-name="cash 100jt">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art cash-art">
+          <span class="product-type">CASH</span>
+          <img class="product-photo" src="cash.webp" alt="Cash 100jt" loading="eager">
+          <span class="item-code">DDS / 14</span>
+        </div>
+        <div class="product-info"><h3>Cash 100jt</h3><p>Paket 100 juta cash.</p><div class="product-buy"><strong>Rp13.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Cash 50jt" data-id="15" data-category="CASH" data-name="cash 50jt">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art cash-art">
+          <span class="product-type">CASH</span>
+          <img class="product-photo" src="cash.webp" alt="Cash 50jt" loading="eager">
+          <span class="item-code">DDS / 15</span>
+        </div>
+        <div class="product-info"><h3>Cash 50jt</h3><p>Paket 50 juta cash.</p><div class="product-buy"><strong>Rp8.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Cash 10jt" data-id="16" data-category="CASH" data-name="cash 10jt">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art cash-art">
+          <span class="product-type">CASH</span>
+          <img class="product-photo" src="cash.webp" alt="Cash 10jt" loading="eager">
+          <span class="item-code">DDS / 16</span>
+        </div>
+        <div class="product-info"><h3>Cash 10jt</h3><p>Paket 10 juta cash.</p><div class="product-buy"><strong>Rp5.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+      <article class="product-card" role="button" tabindex="0" aria-label="Pilih Cash 5jt" data-id="17" data-category="CASH" data-name="cash 5jt">
+        <span class="selected-qty" aria-live="polite" hidden></span>
+        <div class="product-art cash-art">
+          <span class="product-type">CASH</span>
+          <img class="product-photo" src="cash.webp" alt="Cash 5jt" loading="eager">
+          <span class="item-code">DDS / 17</span>
+        </div>
+        <div class="product-info"><h3>Cash 5jt</h3><p>Paket 5 juta cash.</p><div class="product-buy"><strong>Rp3.500</strong><span class="select-hint">Klik untuk memilih</span></div></div>
+      </article>
+    </div>
+    <div class="empty-state" id="emptyState" hidden>Produk tidak ditemukan. Coba kata kunci lain.</div>
+  </section>
+
+  <section class="how section" id="cara-beli">
+    <div class="section-head"><div><div class="eyebrow">SIMPLE CHECKOUT</div><h2>Cara <span>pembelian</span></h2></div></div>
+    <div class="steps"><article><span>01</span><h3>Pilih produk</h3><p>Tambahkan Gamepass atau Cash ke keranjang dan cek total belanja.</p></article><article><span>02</span><h3>Isi data</h3><p>Masukkan nama, username Roblox, dan nomor WhatsApp yang aktif.</p></article><article><span>03</span><h3>Bayar & konfirmasi</h3><p>Lihat QRIS toko, lakukan pembayaran, lalu kirim pesanan dan bukti bayar lewat WhatsApp.</p></article></div>
+  </section>
+  <section class="faq section" id="faq"><div><div class="eyebrow">BUTUH INFORMASI?</div><h2>Frequently asked <span>questions</span></h2></div><details><summary>Apakah pembayaran langsung otomatis terverifikasi?</summary><p>Belum. Versi ini menggunakan konfirmasi manual melalui WhatsApp. Admin memeriksa pembayaran dan memproses pesanan.</p></details><details><summary>Data apa yang perlu disiapkan?</summary><p>Nama pembeli, username Roblox yang benar, dan nomor WhatsApp aktif. Jangan pernah memberikan password atau kode OTP Roblox.</p></details><details><summary>Bagaimana cara memastikan QRIS benar?</summary><p>Pastikan nama merchant dan nominal sesuai sebelum membayar. Gunakan QRIS resmi milik toko, bukan QR contoh.</p></details></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">L</span><span>Loxstore</span></a><p>Website independen untuk transaksi item game. Tidak berafiliasi dengan atau didukung resmi oleh Roblox maupun developer Drag Drive Simulator.</p><span>© 2026 Loxstore</span></footer>
+
+<div class="overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Keranjang belanja" aria-hidden="true">
+  <div class="drawer-head"><div><div class="eyebrow">YOUR ORDER</div><h2>Keranjang</h2></div><button class="icon-button" id="closeCart" aria-label="Tutup keranjang">×</button></div>
+  <div id="cartItems" class="cart-items"><div class="cart-empty">Keranjang masih kosong.<br>Pilih produk dari katalog.</div></div>
+  <div class="cart-total"><span>Total pembayaran</span><strong id="cartTotal">Rp0</strong></div>
+  <button class="btn primary full" id="checkoutBtn">Lanjut checkout <span>→</span></button>
+  <p class="drawer-note">Pesanan akan dirangkum dan diteruskan ke WhatsApp admin.</p>
+</aside>
+
+<div class="modal-overlay" id="checkoutModal">
+  <div class="modal">
+    <button class="icon-button modal-close" id="closeCheckout" aria-label="Tutup">×</button>
+    <div class="eyebrow">FINAL STEP</div><h2>Detail <span>pesanan</span></h2>
+    <p class="modal-intro">Periksa username Roblox sebelum melanjutkan. Jangan pernah memasukkan password akun.</p>
+    <form id="checkoutForm">
+      <input type="hidden" id="cartJson">
+      <label>Nama pembeli<input required name="customer_name" maxlength="100" placeholder="Nama kamu"></label>
+      <label>Username Roblox<input required name="roblox_username" maxlength="100" placeholder="Username"></label>
+      <label>Nomor WhatsApp kamu<input required name="customer_whatsapp" maxlength="30" placeholder="08xxxxxxxxxx"></label>
+      <div class="payment-choice"><label class="payment-option"><input type="radio" name="payment_method" value="QRIS" checked><span><b>QRIS</b><small>Bayar lalu kirim bukti via WhatsApp</small></span></label><label class="payment-option"><input type="radio" name="payment_method" value="KONFIRMASI_WA"><span><b>Konfirmasi dulu</b><small>Diskusikan order dengan admin</small></span></label></div>
+      <div class="checkout-total"><span>Total</span><strong id="checkoutTotal">Rp0</strong></div>
+      <button class="btn primary full" type="submit">Buat pesanan & buka WhatsApp →</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal-overlay" id="qrisModal">
+  <div class="modal qris-modal"><button class="icon-button modal-close" id="closeQris" aria-label="Tutup">×</button><div class="eyebrow">PAYMENT</div><h2>Pembayaran <span>QRIS</span></h2><p class="modal-intro">Gunakan QRIS resmi toko. Pastikan nama merchant benar sebelum membayar.</p><img class="qris-real" src="qris.png" alt="QRIS resmi toko" loading="eager"><button class="btn ghost full" id="closeQris2">Selesai</button></div>
+</div>
+
+<div class="cart-toast" id="cartToast" role="status" aria-live="polite" aria-atomic="true">
+  <span class="toast-check" aria-hidden="true">✓</span>
+  <span><strong>Ditambahkan ke keranjang</strong><small id="cartToastText">Produk berhasil ditambahkan.</small></span>
+</div>
+
+<script>
+window.DDS_PRODUCTS = [{"id": 1, "name": "Suspension Pro", "category": "GAMEPASS", "price": 7500, "image": "suspension-pro.webp"}, {"id": 2, "name": "Boombox Radio", "category": "GAMEPASS", "price": 7500, "image": "boombox.webp"}, {"id": 3, "name": "Premium Acc", "category": "GAMEPASS", "price": 11500, "image": "premium-accessories.webp"}, {"id": 4, "name": "Advance Paint Pass", "category": "GAMEPASS", "price": 11500, "image": "advance-paint.webp"}, {"id": 5, "name": "Exclusive Rims", "category": "GAMEPASS", "price": 14000, "image": "exclusive-rims.webp"}, {"id": 6, "name": "Custom Plate Pass", "category": "GAMEPASS", "price": 14000, "image": "custom-plate.webp"}, {"id": 7, "name": "Slot Limit Unlocked", "category": "GAMEPASS", "price": 15500, "image": "slot-limit-unlocked.webp"}, {"id": 8, "name": "Drag Spec Pass", "category": "GAMEPASS", "price": 18000, "image": "drag-spec.webp"}, {"id": 9, "name": "Luxury Pass", "category": "GAMEPASS", "price": 19000, "image": "luxury.webp"}, {"id": 10, "name": "Police Pass", "category": "GAMEPASS", "price": 23000, "image": "police.webp"}, {"id": 11, "name": "2x Pay Check", "category": "GAMEPASS", "price": 70000, "image": "2x-paycheck.webp"}, {"id": 12, "name": "Cash 1M", "category": "CASH", "price": 98000, "image": "cash.webp"}, {"id": 13, "name": "Cash 500jt", "category": "CASH", "price": 51000, "image": "cash.webp"}, {"id": 14, "name": "Cash 100jt", "category": "CASH", "price": 13500, "image": "cash.webp"}, {"id": 15, "name": "Cash 50jt", "category": "CASH", "price": 8500, "image": "cash.webp"}, {"id": 16, "name": "Cash 10jt", "category": "CASH", "price": 5500, "image": "cash.webp"}, {"id": 17, "name": "Cash 5jt", "category": "CASH", "price": 3500, "image": "cash.webp"}];
+window.WHATSAPP_CONFIGURED = true;
+window.STORE_NAME = "Loxstore";
+window.WHATSAPP_NUMBER = "6282136950114";
+</script>
+<script src="app.js?v=5"></script>
+</body></html>
